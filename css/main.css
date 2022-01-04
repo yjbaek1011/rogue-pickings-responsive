@@ -19,6 +19,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	flex-direction: column;
 }
 
 h1,
@@ -93,6 +94,7 @@ header nav ul li a{
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	flex-direction: column;
 }
 
 
