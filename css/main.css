@@ -76,20 +76,18 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
+	padding: 10px 0;
 	list-style: none;
 }
 
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-	line-height: 3.5em;
 }
 
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -128,6 +126,7 @@ header nav ul li a{
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
+	padding: 0 10px;
 }
 
 .section-two h3,
@@ -171,4 +170,55 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+/**Breakpoints**/
+
+/**Breakpoints for tablet**/
+@media only screen and (min-width:768px) {
+.bottom-section {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-one, .section-two, .section-three {
+flex-basis: 30%;
+border-top:none;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 0 10px;
+}
+}
+
+
+/**Breakpoints for desktop**/
+@media only screen and (min-width:1200px) {
+header {
+	justify-content: space-between;
+}
+
+header h1 {
+	width: 30%;
+	border-bottom: none;
+	text-align: left;
+	padding: 0;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 15px 0;
+	width: 40%;
+
+}
+header nav ul {
+display:flex;
+justify-content: space-between;
+}
 }
